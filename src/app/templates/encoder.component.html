@@ -1,0 +1,31 @@
+<div class="encoder">
+	<h3>Encoder</h3>
+
+	<p>
+		Accept a signed integer in the 14-bit range [-8192..+8191] and return a 4 character string.
+	</p>
+
+	<ul>
+
+		<li>
+			1. Add 8192 to the raw value, so its range is translated to [0..16383]
+		</li>
+		<li>
+			2. Pack that value into two bytes such that the most significant bit of each is cleared
+		</li>
+		<li>
+			3. Format the two bytes as a single 4-character hexadecimal string and return it.
+		</li>
+
+	</ul>
+
+	<div class="encoding">
+
+		<input class="user_input" #to_encode (keyup)="encode_number( to_encode.value )" placeholder="[-8192..+8191]" >
+
+	</div>
+
+	<h4>Hex Result: </h4>
+	<p>{{result}}</p>
+
+</div>

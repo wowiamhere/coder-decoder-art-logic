@@ -17,4 +17,5 @@ export class MenuComponent{
   set_function(to_do: string): void {
     this.router.navigate( [ to_do ] );
   }
+
 }

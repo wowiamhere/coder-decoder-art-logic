@@ -5,3 +5,14 @@
 	text-align:center;
 	margin:auto;
 }
+
+.encoder{
+	display:block;
+	position:relative;
+	width:30%;
+	margin:5% auto;
+}
+
+.encoding{}
+
+.user_input{}
