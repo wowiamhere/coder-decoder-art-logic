@@ -14,7 +14,7 @@ export class EncoderComponent{
 		
 		let input = Number(number);
 
-		if(input < -8192 || input > 8191)
+		if(input < -8192 || input > 8191 )
 		
 			this.result = 'NUMBER IS OUT OF RANGE';
 		

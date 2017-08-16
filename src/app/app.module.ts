@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './components/app.component';
 import { MenuComponent } from './components/menu.component';
 import { EncoderComponent } from './components/encoder.component';
+import { DecoderComponent } from './components/decoder.component';
 
 import { routing } from '../app.routing';
 
@@ -11,7 +12,8 @@ import { routing } from '../app.routing';
   declarations: [
     AppComponent,
     MenuComponent,
-    EncoderComponent
+    EncoderComponent,
+    DecoderComponent
   ],
   imports: [
     BrowserModule,

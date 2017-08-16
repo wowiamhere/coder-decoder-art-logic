@@ -1,0 +1,22 @@
+<div class="decoder">
+	<h3>Decoder</h3>
+
+	<p>
+		Your decoding function should accept two bytes on input, both in the range [0x00..0x7F] and recombine them to return the corresponding integer between [-8192..+8191]
+	</p>
+
+	<div class="encoding">
+
+		<input class="user_input" #high_bit (keyup)="set_hi_bit( high_bit.value )" placeholder="[0x00..0x7f]" >
+
+		<input class="user_input" #lo_bit (keyup)="set_lo_bit( lo_bit.value )" placeholder="[0x00..0x7f]" >
+
+		<button (click)="calculate()">Decode</button>
+
+	</div>
+
+	<h4>Decimal Result: </h4>
+	<span>{{error}}</span>
+	<p>{{result}}</p>
+
+</div>
